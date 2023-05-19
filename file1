@@ -1,0 +1,17 @@
+#include <iostream>
+#include <vector>
+
+double calculateAverage(const std::vector<int>& arr) {
+    int sum = 0;
+    for (int element : arr) {
+        sum += element;
+    }
+    return static_cast<double>(sum) / arr.size();
+}
+
+int main() {
+    std::vector<int> numbers = {1, 2, 3, 4, 5};
+    std::cout << calculateAverage(numbers) << std::endl;
+    return 0;
+}
+
